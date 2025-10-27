@@ -3,6 +3,8 @@ package com.CRM.TestCase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.CRM.Utility.CommonUtility;
+
 
 
 public class HomePageTestCase extends BaseClass{
@@ -30,6 +32,7 @@ public class HomePageTestCase extends BaseClass{
   @Test(priority = 3)
   public void validateSignInLink() {
 	  
+	  CommonUtility.getScreenShot(driver, "HomePage");
 	  String nextPageUrl = hp.getStatusOfLink();
 	  Assert.assertTrue(nextPageUrl.contains("login"),"Test Fail: Login Page not open");
 	  System.out.println("Test Pass: Application Navigation to Login Page");
