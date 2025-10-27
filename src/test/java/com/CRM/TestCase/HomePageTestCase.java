@@ -12,7 +12,7 @@ public class HomePageTestCase extends BaseClass{
 	
   @Test(priority = 1 )
   public void verifyUrl() {
-	 
+	  CommonUtility.getScreenShot(driver, "HomePageURL");
 	  String actUrl = hp.getAppUrl();
 	  Assert.assertTrue(actUrl.contains("crm"),"Test Fail: Url not match");
 	  System.out.println("Test Pass: Url match");
@@ -21,7 +21,7 @@ public class HomePageTestCase extends BaseClass{
   
   @Test(priority = 2)
   public void verifyTitle() {
-	  
+	  CommonUtility.getScreenShot(driver, "HomePageTitle");
 	  String actTitle = hp.getAppTitle();
 	  Assert.assertTrue(actTitle.contains("Customer"),"Test Fail: Title not match");
 	  System.out.println("Test Pass: Title match");
