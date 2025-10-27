@@ -253,6 +253,7 @@ public class Automation {
 				System.out.println(autoMobile.linkText);
 				utility.checkPriceData(pd);
 				utility.sendQuote(sendQuote);
+				System.out.println("----------------------");
 			}
 		}else if (obj.getClass() == Truck.class) {
 			
@@ -267,6 +268,7 @@ public class Automation {
 				System.out.println(truck.linkText);
 				utility.checkPriceData(pd);
 				utility.sendQuote(sendQuote);
+				System.out.println("----------------------");
 			}
 			
 		}else if (obj.getClass() == Motorcycle.class) {
@@ -282,6 +284,7 @@ public class Automation {
 				System.out.println(motorcycle.linkText);
 				utility.checkPriceData(pd);
 				utility.sendQuote(sendQuote);
+				System.out.println("----------------------");
 			}
 			
 		}else if (obj.getClass() == Camper.class) {
@@ -297,6 +300,7 @@ public class Automation {
 				System.out.println(camper.linkText);
 				utility.checkPriceData(pd);
 				utility.sendQuote(sendQuote);
+				System.out.println("----------------------");
 			}
 			
 		} else {
